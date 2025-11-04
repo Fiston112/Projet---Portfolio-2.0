@@ -1,9 +1,10 @@
+import logofk from "../assets/fk.png" // adapte le chemin selon ton dossier
 const Navbar = () => {
   return (
     <div className="flex justify-center md:justify-between items-center">
       <a href="#Home" className="flex items-center font-bold text-3xl md:text-xl">
 
-        <img src="./src/assets/fk.png" alt="Logo FK" className="w-15 h-auto" />
+        <img src={logofk} alt="Logo FK" className="w-15 h-auto" />
         <span className="text-bold text-4xl">FK</span><span className="text-success text-bold text-4xl">.Tech</span>
       </a>
       <label className="toggle text-base-content">
