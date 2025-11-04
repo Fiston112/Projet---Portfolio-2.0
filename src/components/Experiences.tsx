@@ -68,7 +68,7 @@ const experiences = [
 
 const Experiences = () => {
   return (
-    <div id="Experiences" className="-mt-2 -md:mt-8 -mb-8 py-2">
+    <div id="Experiences" className="-mt-1 -md:mt-8 -mb-8 py-3">
       <Title title="Expériences" />
       <div className="flex flex-col-reverse md:flex-row justify-center items-center">
         <div className="flex flex-wrap gap-5 justify-center items-center md:w-1/3 mt-3 md:mt-0">
