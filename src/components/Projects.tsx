@@ -56,7 +56,7 @@ const projects = [
   },
   {
     id: 6,
-    title: "Base de données – Gestion des recrtements",
+    title: "Base de données – Gestion des recrutements",
     description:
       "Base de données SQL avec tables, relations et requêtes pour gérer les informations des stagiares et alternants.",
     technologies: ["SQL", "PostegreSQL"],
