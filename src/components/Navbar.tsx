@@ -2,7 +2,6 @@ const Navbar = () => {
   return (
     <div className="flex justify-center md:justify-between items-center p-2">
       <a href="#Home" className="flex items-center font-bold text-3xl md:text-xl">
-        <img src="./src/assets/FK.png" alt="Logo FK" className="w-15 h-auto" />
         <span className="text-bold text-4xl">FK</span><span className="text-success text-bold text-4xl">.Tech</span>
       </a>
       <label className="toggle text-base-content">
