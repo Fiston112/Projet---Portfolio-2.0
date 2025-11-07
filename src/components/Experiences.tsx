@@ -12,7 +12,6 @@ import imgDAISYUI from "../assets/techno/daisyUI.png";
 
 import equalis from "../assets/compagnies/equalis.png";
 import leclerc from "../assets/compagnies/leclerc.png";
-import oxanfoxs from "../assets/compagnies/oxanfoxs.png";
 import oci from "../assets/compagnies/oci_carre.png";
 
 const skills = [
