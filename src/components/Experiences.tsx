@@ -55,7 +55,7 @@ const experiences = [
   {
     id: 3,
     role: "Chef de Projet IT & Lead UI/UX",
-    company: "Oxanfoxs",
+    company: "OCI Informatique & Digital",
     period: "Avril - Juin 2022 - Freelance",
     description: [
       "Définition des objectifs, planification des étapes et suivi des livrables.",
