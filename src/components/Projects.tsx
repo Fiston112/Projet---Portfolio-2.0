@@ -50,13 +50,20 @@ const projects = [
     title: "Application WEB - Nextalent RH",
     description:
       "Devéloppement d'une appplication Web de gestion de recrutement des stagiares et alternants.",
-    technologies: ["HTML", "JavaScrip", "React", "Node.js", "Express.js", "Prisma"],
+    technologies: [
+      "HTML",
+      "JavaScrip",
+      "React",
+      "Node.js",
+      "Express.js",
+      "Prisma",
+    ],
     repoLink: "",
     image: projet5,
   },
   {
     id: 6,
-    title: "Base de données – Gestion des recrtements",
+    title: "Base de données – Gestion des recrutements",
     description:
       "Base de données SQL avec tables, relations et requêtes pour gérer les informations des stagiares et alternants.",
     technologies: ["SQL", "PostegreSQL"],
@@ -85,11 +92,9 @@ const Projects = () => {
               <p className=" text-sm"> {project.description} </p>
             </div>
             <div className="flex flex-wrap gap-2 my-3">
-                {project.technologies.map((tech) => (
-                    <span className="badge badge-success badge-sm">
-                        {tech}
-                    </span>
-                ))}
+              {project.technologies.map((tech) => (
+                <span className="badge badge-success badge-sm">{tech}</span>
+              ))}
             </div>
             {/* <div>
                 <a className="btn btn-success" href=""> {project.demoLink}
@@ -97,11 +102,16 @@ const Projects = () => {
                     <video className="w-4" />
                 </a>
             </div> */}
-             <div>
-                <a className="btn btn-neutral w-3/3" href="https://github.com/Fiston112"> {project.repoLink}
-                    GitHub
-                    <Github className="w-4" />
-                </a>
+            <div>
+              <a
+                className="btn btn-neutral w-3/3"
+                href="https://github.com/Fiston112"
+              >
+                {" "}
+                {project.repoLink}
+                GitHub
+                <Github className="w-4" />
+              </a>
             </div>
           </div>
         ))}

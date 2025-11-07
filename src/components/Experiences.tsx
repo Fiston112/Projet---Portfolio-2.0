@@ -13,6 +13,7 @@ import imgDAISYUI from "../assets/techno/daisyUI.png";
 import equalis from "../assets/compagnies/equalis.png";
 import leclerc from "../assets/compagnies/leclerc.png";
 import oxanfoxs from "../assets/compagnies/oxanfoxs.png";
+import oci from "../assets/compagnies/oci_carre.png";
 
 const skills = [
   { id: 1, name: "Jira", image: imgJIRA },
@@ -54,7 +55,7 @@ const experiences = [
   {
     id: 3,
     role: "Chef de Projet IT & Lead UI/UX",
-    company: "Oxanfoxs",
+    company: "OCI Informatique & Digital",
     period: "Avril - Juin 2022 - Freelance",
     description: [
       "Définition des objectifs, planification des étapes et suivi des livrables.",
@@ -62,7 +63,7 @@ const experiences = [
       "Optimisation des ressources et respect des échéances.",
       "Recherche et intégration de nouvelles tendances UX/UI et IT.",
     ],
-    image: oxanfoxs,
+    image: oci,
   },
 ];
 
