@@ -13,7 +13,7 @@ const projects = [
     id: 1,
     title: "Portfolio Personnel",
     description:
-      "Un site personnel moderne pour présenter mon parcours, mes compétences et mes projets.",
+      "Un site personnel moderne pour présenter mon profil, mes parcours, mes compétences et mes projets.",
     technologies: ["HTML", "React", "TS", "Tailwind CSS", "DaisyUI"],
     repoLink: "",
     image: projet1,
@@ -74,13 +74,14 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div id="Projects" className="mt-20">
+    <section id="Projects" className="max-w-7xl mx-auto px-4 pt-25 pb-16">
       <Title title="Mes Projets" />
-      <div className="grid md:grid-cols-3 gap-4">
+
+      <div className="grid md:grid-cols-3 gap-6 mt-12">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-base-300 p-5 h-fit rounded-xl shadow-lg"
+            className="bg-base-300 p-2 h-fit rounded-xl shadow-lg"
           >
             <img
               src={project.image}
@@ -89,34 +90,33 @@ const Projects = () => {
             />
             <div>
               <h1 className="my-2 font-bold text-success">{project.title}</h1>
-              <p className=" text-sm"> {project.description} </p>
+              <p className="text-sm leading-snug">{project.description}</p>
             </div>
             <div className="flex flex-wrap gap-2 my-3">
-              {project.technologies.map((tech) => (
-                <span className="badge badge-success badge-sm">{tech}</span>
+              {project.technologies.map((tech, index) => (
+                <span
+                  key={index}
+                  className="badge badge-success badge-sm"
+                >
+                  {tech}
+                </span>
               ))}
             </div>
-            {/* <div>
-                <a className="btn btn-success" href=""> {project.demoLink}
-                    Demo
-                    <video className="w-4" />
-                </a>
-            </div> */}
             <div>
               <a
-                className="btn btn-neutral w-3/3"
+                className="btn btn-neutral w-full"
                 href="https://github.com/Fiston112"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                {" "}
-                {project.repoLink}
+                <Github className="w-4 mr-1" />
                 GitHub
-                <Github className="w-4" />
               </a>
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

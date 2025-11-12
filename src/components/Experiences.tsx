@@ -55,7 +55,7 @@ const experiences = [
     id: 3,
     role: "Chef de Projet IT & Lead UI/UX",
     company: "OCI Informatique & Digital",
-    period: "Avril - Juin 2022 - Freelance",
+    period: "2023 - Stage",
     description: [
       "Définition des objectifs, planification des étapes et suivi des livrables.",
       "UX/UI designers et autres parties prenantes.",
@@ -68,27 +68,31 @@ const experiences = [
 
 const Experiences = () => {
   return (
-    <div id="Experiences" className="-mt-1 -md:mt-8 -mb-8 py-3">
+    <section id="Experiences" className="max-w-7xl mx-auto px-4 pt-20 pb-12">
       <Title title="Expériences" />
-      <div className="flex flex-col-reverse md:flex-row justify-center items-center">
-        <div className="flex flex-wrap gap-5 justify-center items-center md:w-1/3 mt-3 md:mt-0">
+
+      <div className="flex flex-col-reverse md:flex-row justify-center items-start gap-5 mt-8">
+        {/* Liste des skills */}
+        <div className="flex flex-wrap gap-4 justify-center items-center md:w-1/3">
           {skills.map((skill) => (
             <div
               key={skill.id}
-              className=" flex justify-center items-center flex-col"
+              className="flex flex-col justify-center items-center mt-4"
             >
-              <div className="flex w-18 h-18 p-5 rounded-full border-2 border-success my-4">
+              <div className="flex w-16 h-16 mt-5 p-5 rounded-full border-2 border-success">
                 <img
                   src={skill.image}
-                  alt="{skill.name}"
-                  className="object-center rounded-full h-full w_full"
+                  alt={skill.name}
+                  className="object-center rounded-full h-full w-full"
                 />
               </div>
-              <span className="mt-2 text-sm"> {skill.name} </span>
+              <span className="mt-5 text-sm">{skill.name}</span>
             </div>
           ))}
         </div>
-        <div className="md:ml-4 flex flex-col space-y-2">
+
+        {/* Liste des expériences */}
+        <div className="md:ml-3 flex flex-col gap-3 md:w-3/3 w-full">
           {experiences.map((experience) => (
             <div
               key={experience.id}
@@ -100,15 +104,15 @@ const Experiences = () => {
                   alt={experience.company}
                   className="object-cover h-7 w-7"
                 />
-                <div className="ml-4">
+                <div className="ml-3">
                   <h1 className="text-xl text-success font-bold">
-                    {experience.role}, {experience.company}
+                    {experience.role}, <span className="text-white">{experience.company}</span>
                   </h1>
                   <span className="text-sm">{experience.period}</span>
                 </div>
               </div>
 
-              <ul className="list-disc ml-16 mt-2">
+              <ul className="list-disc ml-14 mt-2 space-y-1 leading-4">
                 {experience.description.map((desc, index) => (
                   <li key={index}>{desc}</li>
                 ))}
@@ -117,7 +121,7 @@ const Experiences = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

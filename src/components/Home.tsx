@@ -3,9 +3,9 @@ import img from "../assets/portfolio.jpg";
 
 const Home = () => {
   return (
-    <div className="flex flex-col-reverse p-5 md:flex-row justify-center items-center md:my-20 my-10">
-      <div className="flex flex-col">
-        <h1 className="text-4xl md:text-5xl font-bold text-center md:text-left mt-4 md:mt-0">
+    <div id="Home" className="flex flex-col-reverse p-5 md:flex-row justify-center items-center md:my-4 my-6">
+      <div className="flex mt-54 flex-col">
+        <h1 className="text-4xl md:text-5xl font-bold text-center md:text-left -mt-45 md:mt-0">
           Bonjour, <br />
           je suis{" "}
           <span className="text-success font-bold text-5xl">Fiston Kasasa</span>
@@ -30,11 +30,11 @@ const Home = () => {
           Contactez-moi
         </a>
       </div>
-      <div className="md:ml-20">
+      <div className="md:ml-25">
         <img
           src={img}
           alt="photo FK"
-          className="w-90 max-w-[400px] h-90 object-cover border-8 border-success shadow-xl"
+          className="w-50 h-50 mt-5 max-w-[400px] object-cover border-8 border-success shadow-xl sm:w-60 sm:h-60 md:w-60 md:h-60 lg:w-88 lg:h-88 md:mt-15 transition-all duration-300"
           style={{
             borderRadius: "30% 70% 70% 30% / 67% 62% 38% 33%",
           }}
